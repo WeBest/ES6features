@@ -471,7 +471,7 @@ var handler =
 ### Symbols
 Symbols enable access control for object state.  Symbols allow properties to be keyed by either `string` (as in ES5) or `symbol`.  Symbols are a new primitive type. Optional `description` parameter used in debugging - but is not part of identity.  Symbols are unique (like gensym), but not private since they are exposed via reflection features like `Object.getOwnPropertySymbols`.
 
-符号(Symbol) 能够实现针对对象状态的访问控制，允许使用string(与ES5相同)或symbol作为键来访问属性。符号是一个新的原语类型，可选的description参数可以用于调试——但并不是符号身份的一部分。符号是独一无二的(如同gensym（所产生的符号）)，但不是私有的，因为它们可以通过类似Object.getOwnPropertySymbols的反射特性暴露出来。
+Symbols 能够实现针对对象状态的访问控制，允许使用`string`(与ES5相同)或`symbol`作为键来访问属性。Symbols是一个新的原始类型，可选的`description`参数可以用于调试——但并不是符号身份的一部分。Symbols是独一无二的(如同gensym（所产生的符号）)，但不是私有的，因为它们可以通过类似`Object.getOwnPropertySymbols`的反射特性暴露出来。
 
 
 ```JavaScript
