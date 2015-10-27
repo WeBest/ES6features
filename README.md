@@ -331,7 +331,7 @@ alert("2π = " + sum(pi, pi));
 
 Some additional features include `export default` and `export *`:
 
-一些额外的新特性，包括export default以及export *：
+一些额外的新特性，包括`export default`以及`export *`：
 
 ```JavaScript
 // lib/mathplusplus.js
@@ -359,11 +359,11 @@ The default module loader can be configured, and new loaders can be constructed 
 
 模块加载器支持:
 
-动态加载
-状态隔离
-全局命名空间隔离
-编译钩子
-嵌套虚拟化(注: 在模块内调用模块)
+- 动态加载
+- 状态隔离
+- 全局命名空间隔离
+- 编译钩子
+- 嵌套虚拟化(注: 在模块内调用模块)
 
 默认的模块加载器是可配置的，也可以构建新的加载器，对在隔离和受限上下文中的代码进行求值和加载。
 
