@@ -348,14 +348,6 @@ alert("2π = " + ln(e)*pi*2);
 ```
 
 ### Module Loaders
-Module loaders support:
-- Dynamic loading
-- State isolation
-- Global namespace isolation
-- Compilation hooks
-- Nested virtualization
-
-The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
 模块加载器支持:
 
@@ -365,7 +357,7 @@ The default module loader can be configured, and new loaders can be constructed 
 - 编译钩子
 - 嵌套虚拟化(注: 在模块内调用模块)
 
-默认的模块加载器是可配置的，也可以构建新的加载器，对在隔离和受限上下文中的代码进行求值和加载。
+默认的模块加载器是可配置的，新的加载器可以配置成可以在隔离或者受限上下文中的代码进行求值和加载。
 
 ```JavaScript
 // Dynamic loading – ‘System’ is default loader
