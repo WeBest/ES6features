@@ -307,9 +307,7 @@ for(var c of "𠮷") {
 ```
 
 ### Modules
-Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model – no code executes until requested modules are available and processed.
-
-ES6 在语言层面上支持使用模块来进行组件定义，将流行的JavaScript模块加载器（AMD、CommonJS）中的模式固化到了语言中。运行时行为由宿主定义的默认加载器定义，隐式异步模型 - 直到（全部）请求的模块均可用且经处理后，才会执行（当前模块内的）代码。
+在编程语言级别上支持使用模块来进行组件定义。将流行的JavaScript模块加载器（AMD、CommonJS）的模式编撰到了语言中。运行时行为由宿主定义的默认加载器定义，隐式异步模型 - 直到（全部）请求的模块均可用且经处理后，才会执行（当前模块内的）代码。
 
 ```JavaScript
 // lib/math.js
