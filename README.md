@@ -307,9 +307,7 @@ for(var c of "𠮷") {
 ```
 
 ### Modules
-Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model – no code executes until requested modules are available and processed.
-
-ES6 在语言层面上支持使用模块来进行组件定义，将流行的JavaScript模块加载器（AMD、CommonJS）中的模式固化到了语言中。运行时行为由宿主定义的默认加载器定义，隐式异步模型 - 直到（全部）请求的模块均可用且经处理后，才会执行（当前模块内的）代码。
+在编程语言级别上支持使用模块来进行组件定义。将流行的JavaScript模块加载器（AMD、CommonJS）的模式编撰到了语言中。运行时行为由宿主定义的默认加载器定义，隐式异步模型 - 直到（全部）请求的模块均可用且经处理后，才会执行（当前模块内的）代码。
 
 ```JavaScript
 // lib/math.js
@@ -348,14 +346,6 @@ alert("2π = " + ln(e)*pi*2);
 ```
 
 ### Module Loaders
-Module loaders support:
-- Dynamic loading
-- State isolation
-- Global namespace isolation
-- Compilation hooks
-- Nested virtualization
-
-The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
 模块加载器支持:
 
@@ -365,7 +355,7 @@ The default module loader can be configured, and new loaders can be constructed 
 - 编译钩子
 - 嵌套虚拟化(注: 在模块内调用模块)
 
-默认的模块加载器是可配置的，也可以构建新的加载器，对在隔离和受限上下文中的代码进行求值和加载。
+默认的模块加载器是可配置的，新的加载器可以配置成可以在隔离或者受限上下文中的代码进行求值和加载。
 
 ```JavaScript
 // Dynamic loading – ‘System’ is default loader
@@ -385,7 +375,6 @@ System.set('jquery', Module({$: $})); // WARNING: not yet finalized
 ```
 
 ### Map + Set + WeakMap + WeakSet
-Efficient data structures for common algorithms.  WeakMaps provides leak-free object-key’d side tables.
 
 用于实现常见算法的高效数据结构，WeakMaps提供不会泄露的对象键(对象作为键名，而且键名指向对象)索引表。
 
